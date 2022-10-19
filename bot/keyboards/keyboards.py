@@ -8,5 +8,3 @@ info.add(i)
 send = InlineKeyboardMarkup(resize_keyboard=True)
 s = InlineKeyboardButton('send', callback_data='send')
 send.add(s)
-
-

@@ -46,6 +46,3 @@ def register_handlers(dp: Dispatcher):
     dp.register_message_handler(start, commands=['start'])
     dp.register_message_handler(send_all, commands=['send'])
     dp.register_message_handler(admin, commands=['admin'], is_chat_admin=True)
-
-
-

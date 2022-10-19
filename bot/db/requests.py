@@ -32,18 +32,3 @@ async def get_users(db_session: AsyncSession):
     async with db_session() as session:
         stmt = await session.execute(select(Users.user_id, Users.active))
         return stmt.fetchall()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

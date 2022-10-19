@@ -9,14 +9,3 @@ class Users(Base):
     id = Column(Integer, primary_key=True)
     user_id = Column(BigInteger, unique=True, nullable=False)
     active = Column(Integer, default=1)
-
-
-
-
-
-
-
-
-
-
-
