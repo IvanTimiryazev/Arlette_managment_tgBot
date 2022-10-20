@@ -18,7 +18,11 @@ async def start(message: types.Message):
     if message.chat.type == 'private':
         x = await register_check(db_session, user_id)
         if x:
-            await message.answer('Бот запущен!')
+            await message.answer(
+                'Привет, красотка! Этот бот мы с командой Arlette Management создали для того, чтобы ты всегда была в\
+                 курсе новых кастингов в нашей группе ВКонтакте - каждый раз, когда наши букеры публикуют кастинг, в\
+                  боте будет приходить уведомление ❤️'
+            )
             await message.delete()
         if not x:
             await add_user(db_session, user_id)
